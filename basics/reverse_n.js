@@ -1,7 +1,15 @@
-let n = 1234;
-cnt = 0;
-while(n > 1){
-    n = n/10;
-    cnt++;
+let n = 1001;
+const original = n;
+let rev = 0;
+
+while (n > 0) {
+    let digit = n % 10;
+    rev = rev * 10 + digit;
+    n = Math.floor(n / 10);
 }
-console.log(cnt);
+
+if (rev === real) {
+    console.log("Palindrome");
+} else {
+    console.log("Not");
+}
